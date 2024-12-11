@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myWallet</title>
+  <!-- Google Fonts Preconnect and Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div class="link-buttons">
+        <a href="https://www.instagram.com" class="link-button">
+          <img src="./images/instagram.png" alt="Instagram" class="link-icon">
+        </a>
+        <a href="https://section.blog.naver.com/" class="link-button">
+          <img src="./images/blog.png" alt="Blog" class="link-icon">
+        </a>
+        <a href="https://www.github.com" class="link-button">
+          <img src="./images/github.png" alt="GitHub" class="link-icon">
+        </a>
+        <a href="https://www.notion.so" class="link-button">
+          <img src="./images/notion.png" alt="Notion" class="link-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev-month">◀</button>
+          <h2 id="current-month"></h2>
+          <button id="next-month">▶</button>
+        </div>
+        <div class="calendar-grid" id="calendar-grid"></div>
+      </div>
+
+      <div class="note">
+        <div class="note-paper">
+          <textarea id="note-text" placeholder="메모를 입력하세요..."></textarea>
+          <button id="save-note">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
