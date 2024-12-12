@@ -8,8 +8,8 @@ const saveNoteButton = document.getElementById("save-note");
 
 let date = new Date();
 
-// 요일 배열 (한국어)
-const weekdays = ["일", "월", "화", "수", "목", "금", "토"];
+// 요일 배열
+const weekdays = ["S", "M", "T", "W", "T", "F", "S"];
 
 // 로컬스토리지에서 저장된 메모 가져오기
 const getStoredNotes = () => JSON.parse(localStorage.getItem("notes")) || {};
